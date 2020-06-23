@@ -37,7 +37,7 @@ export const useStorage = () => {
 
   const reset = useCallback(async () => {
     setOnboarded(false);
-    setLocale('en');
+    setLocale('');
     setRegion(undefined);
     await AsyncStorage.clear();
     if (__DEV__) {
